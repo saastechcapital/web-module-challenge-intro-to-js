@@ -191,9 +191,39 @@ Use the game function below to do the following:
 RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors | Or there's a tie
 */
 
-function game(user, computer){
-  /*add your code here*/
-}
+
+
+
+
+let pcMove = ['rock' , 'paper', 'scissors'];
+let pcNumb = Math.floor(Math.random() * 3)
+let computer = pcMove[pcNumb]
+function game(user, computer) {
+  
+  
+  if (computer === 'rock')
+  {
+    if (user === 'rock') { return "it's a tie"; }
+    else if (user === 'paper') {return "you win!";}
+    else if (user === 'scissors') {return "you lose!";}
+  }    
+
+    else if (computer === 'paper')
+  {
+    if (user === 'rock') { return "you lose!";}
+    else if (user === 'paper') {return "it's a tie";}
+    else if (user === 'scissors') {return "you win!";}
+  }
+
+    else if (computer === 'scissors') 
+  {
+    if(user === 'rock') { return "you win!"; }
+    else if (user === 'paper') {return "you lose!";}
+    else if (user === 'scissors') {return "it's a tie";}
+  }
+    else console.log('houston we have a problem'); 
+  
+  }
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -207,8 +237,9 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
+function miles(km) {
+  let miles = km * 0.621371;
+  return(miles) 
 }
 
 
@@ -221,8 +252,9 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
+function feet(CM){
+  let feet = CM / 30.48;
+  return(feet) 
 }
 
 
@@ -240,7 +272,7 @@ Using the annoyingSong function below do the following:
 3. Outside of the function, Make a loop that invokes annoying song with a number that decreases until it gets to 1 bottle left. 
 4. Each time the annoyingSong is run from this loop, it should console.log the string that was returned. 
 */
-
+//let numbRand = Math.floor(Math.random() * 99)
 function annoyingSong(/*add your code here*/){
       /*add your code here*/
 }
