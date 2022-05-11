@@ -19,7 +19,12 @@ Do the following:
 
    HINT: no function required
 */
-let votingAge = 18;   
+const votingAge = 18; 
+if (votingAge >= 18) {
+  console.log('This person can Vote!');
+} else{
+    console.log('this person cannot vote');
+}
   
 
 
@@ -36,7 +41,13 @@ Do the following:
 
    HINT: no function required
 */
-
+let firstThing = 1
+let secondThing = 2
+if(firstThing === secondThing) {
+  
+} else (firstThing = secondThing); {
+  console.log(firstThing);
+}
 
 
 
@@ -51,7 +62,8 @@ Do the following:
 
    HINT: look up the Number method
 */
-
+let str = '1999';
+console.log(Math.floor(str));
 
 
 
@@ -64,8 +76,8 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-  /*add your code here*/
+function multiply(numb1, numb2) {
+  return numb1 * numb2;
 }
 
 
@@ -80,10 +92,11 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
-}
-
+function dogYears(humanYears) {
+   let dogYears = humanYears * 7;
+   return(dogYears);
+  } 
+console.log(dogYears(5))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -132,8 +145,27 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
         So, on this one test, the weight would be 4 pounds, and the age would be 1 years old. It's expecting your function to return a decimal number of 0.2
 */  
 
-function hungryDog(/*add your code here*/){
-  /*add your code here*/
+function hungryDog(pounds,years){
+
+  if(pounds <= 5 && years >= 1){
+    return pounds * 0.05}
+  else if(pounds < 10 && years >= 1) { 
+    return pounds * 0.04}
+  else if(pounds < 15 && years >= 1) { 
+    return pounds * 0.03}
+  else if(pounds >= 15 && years >= 1) { 
+    return pounds * 0.02}
+
+  if(years < .34) { 
+    return pounds * 0.1}
+  else if(years < .58) { 
+    return pounds * 0.05}
+  else if(years < 1) { 
+    return pounds * 0.04}
+
+  else{
+    console.log('ut oh');
+  }
 }
 
 
@@ -162,7 +194,6 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 function game(user, computer){
   /*add your code here*/
 }
-
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
